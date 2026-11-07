@@ -47,6 +47,7 @@ Everything else routes to a single upstream (`X-Model: gemini/gemini-3.5-flash-l
 ```
 ai_unlimited.py    CLI (deepai | anon | pollinations | models | -i REPL)
 providers.py       clients: DeepAI, FreeAnon, Pollinations + island-key port
+crack.py           static endpoint discovery + canary prober for survey targets
 PROTOCOL.md        wire format, multipart fields, task polling, hash algorithm
 REPORT.md          survey of 25 free-AI-no-login sites: endpoints, auth, upstreams
 sites.txt          the surveyed domains
