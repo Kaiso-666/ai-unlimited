@@ -1,0 +1,187 @@
+[
+  {
+    "site": "https://askai.free/",
+    "page_status": 200,
+    "scripts": [
+      "https://askai.free/static/result_access.js",
+      "https://askai.free/static/base.js",
+      "https://askai.free/static/funnel_tracker.js",
+      "https://askai.free/static/chrome_extension_notice.js"
+    ],
+    "endpoints": [
+      "https://askai.free/api/finalize-trial-email",
+      "https://askai.free/api/create-trial-subscription",
+      "https://askai.free/api/view",
+      "https://askai.free/api/create-checkout-session",
+      "https://askai.free/api",
+      "https://askai.free/api/geo",
+      "https://askai.free/api/rate",
+      "https://askai.free/api/track"
+    ],
+    "upstream_hints": [
+      "together",
+      "gemini"
+    ],
+    "probes": [
+      {
+        "endpoint": "https://askai.free/api/finalize-trial-email",
+        "payload": [
+          "prompt",
+          "stream"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"bad setup_intent\",\"ok\":false} "
+      },
+      {
+        "endpoint": "https://askai.free/api/finalize-trial-email",
+        "payload": [
+          "message"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"bad setup_intent\",\"ok\":false} "
+      },
+      {
+        "endpoint": "https://askai.free/api/finalize-trial-email",
+        "payload": [
+          "messages"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"bad setup_intent\",\"ok\":false} "
+      },
+      {
+        "endpoint": "https://askai.free/api/finalize-trial-email",
+        "payload": [
+          "query"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"bad setup_intent\",\"ok\":false} "
+      },
+      {
+        "endpoint": "https://askai.free/api/finalize-trial-email",
+        "payload": [
+          "prompt",
+          "history",
+          "stream"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"bad setup_intent\",\"ok\":false} "
+      },
+      {
+        "endpoint": "https://askai.free/api/create-trial-subscription",
+        "payload": [
+          "prompt",
+          "stream"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"Unknown plan_key\"} "
+      },
+      {
+        "endpoint": "https://askai.free/api/create-trial-subscription",
+        "payload": [
+          "message"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"Unknown plan_key\"} "
+      },
+      {
+        "endpoint": "https://askai.free/api/create-trial-subscription",
+        "payload": [
+          "messages"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"Unknown plan_key\"} "
+      },
+      {
+        "endpoint": "https://askai.free/api/create-trial-subscription",
+        "payload": [
+          "query"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"Unknown plan_key\"} "
+      },
+      {
+        "endpoint": "https://askai.free/api/create-trial-subscription",
+        "payload": [
+          "prompt",
+          "history",
+          "stream"
+        ],
+        "status": 400,
+        "ctype": "application/json",
+        "model": null,
+        "sample": "{\"error\":\"Unknown plan_key\"} "
+      },
+      {
+        "endpoint": "https://askai.free/api/view",
+        "payload": [
+          "prompt",
+          "stream"
+        ],
+        "status": 204,
+        "ctype": "text/html; charset=utf-8",
+        "model": null,
+        "sample": ""
+      },
+      {
+        "endpoint": "https://askai.free/api/view",
+        "payload": [
+          "message"
+        ],
+        "status": 204,
+        "ctype": "text/html; charset=utf-8",
+        "model": null,
+        "sample": ""
+      },
+      {
+        "endpoint": "https://askai.free/api/view",
+        "payload": [
+          "messages"
+        ],
+        "status": 204,
+        "ctype": "text/html; charset=utf-8",
+        "model": null,
+        "sample": ""
+      },
+      {
+        "endpoint": "https://askai.free/api/view",
+        "payload": [
+          "query"
+        ],
+        "status": 204,
+        "ctype": "text/html; charset=utf-8",
+        "model": null,
+        "sample": ""
+      },
+      {
+        "endpoint": "https://askai.free/api/view",
+        "payload": [
+          "prompt",
+          "history",
+          "stream"
+        ],
+        "status": 204,
+        "ctype": "text/html; charset=utf-8",
+        "model": null,
+        "sample": ""
+      }
+    ]
+  }
+]
